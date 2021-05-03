@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="css/login.css" rel="stylesheet">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    }, 1500);
+</script>
+<body>
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h2>Login</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" placeholder="Insert username" id="username">
+                <small>Error message</small>
+            </div>
+            
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="Insert password" id="password">
+                <small>Error message</small>
+            </div>
+        
+            <button>Submit</button>
+
+            <div>
+                <a class = "reg" href="/signup">Register</a>
+            </div>
+
+        </form>
+        
+</div>
+    
+</body>
+</html>
